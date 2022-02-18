@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 const MyComponent = (props) => {
   const { name, children, favoriteNumber } = props;
-  const numberArray = {};
   return (
     <div>
       안녕하세요 제 이름은 {name}입니다. children 값은 {children}
@@ -18,7 +17,5 @@ MyComponent.defaultProps = {
 MyComponent.propTypes = {
   name: PropTypes.string,
   favoriteNumber: PropTypes.number.isRequired,
-  numberArray: Array,
-  yesOrNo: PropTypes.bool,
 };
 export default MyComponent;
